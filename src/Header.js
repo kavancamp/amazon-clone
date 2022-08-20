@@ -8,11 +8,18 @@ import {
   faCartShopping,
 } from "@fortawesome/free-solid-svg-icons";
 import { useStateValue } from "./StateProvider";
+
 library.add(faMagnifyingGlass, faCartShopping);
-//import { MagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+
 
 function Header() {
-  const [{ basket }, dispatch] = useStateValue();
+  const [{ basket, user }, dispatch] = useStateValue();
+
+  const handleAuthenticaton = () => {
+    if (user) {
+      auth.signOut();
+    }
+  };
   return (
     <div className="header">
       <Link to="/">
@@ -32,10 +39,12 @@ function Header() {
       </div>
 
       <div className="header__nav">
-        <Link to="/login">
-          <div className="header__option">
-            <span className="header__optionLineOne">Hello Guest</span>
-            <span className="header__optionLinetwo">Sign In</span>
+        <Link to={!user && "/login"}>
+          <div onClick={handleAuthenticaton} className="header__option">
+            <span className="header__optionLineOne">Hello {user?.email}</span>
+            <span className="header__optionLineTwo">
+              {user ? "Sign Out" : "Sign In"}
+            </span>
           </div>
         </Link>
 
