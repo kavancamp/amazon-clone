@@ -3,14 +3,16 @@ import "./Header.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faMagnifyingGlass, faCartShopping} from "@fortawesome/free-solid-svg-icons";
-import {useStateValue} from "./StateProvider";
+import {
+  faMagnifyingGlass,
+  faCartShopping,
+} from "@fortawesome/free-solid-svg-icons";
+import { useStateValue } from "./StateProvider";
 library.add(faMagnifyingGlass, faCartShopping);
 //import { MagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
-
 function Header() {
-  const [{basket}, dispatch] = useStateValue();
+  const [{ basket }, dispatch] = useStateValue();
   return (
     <div className="header">
       <Link to="/">
@@ -30,10 +32,12 @@ function Header() {
       </div>
 
       <div className="header__nav">
-        <div className="header__option">
-          <span className="header__optionLineOne">Hello Guest</span>
-          <span className="header__optionLinetwo">Sign In</span>
-        </div>
+        <Link to="/login">
+          <div className="header__option">
+            <span className="header__optionLineOne">Hello Guest</span>
+            <span className="header__optionLinetwo">Sign In</span>
+          </div>
+        </Link>
 
         <div className="header__option">
           <span className="header__optionLineOne">Returns</span>
@@ -46,7 +50,9 @@ function Header() {
         <Link to="/checkout">
           <div className="header__optionBasket">
             <FontAwesomeIcon icon="fa-solid fa-cart-shopping" />
-            <span className="header__optionLineTwo header__basketCount">{basket?.length}</span>
+            <span className="header__optionLineTwo header__basketCount">
+              {basket?.length}
+            </span>
           </div>
         </Link>
       </div>
