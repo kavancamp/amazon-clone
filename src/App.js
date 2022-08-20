@@ -1,14 +1,16 @@
-import "./App.css";
 import React, { useEffect } from "react";
+import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Header from "./Header.js";
 import Home from "./Home.js";
 import Checkout from "./Checkout.js";
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
+import Login from "./Login.js";
 
 function App() {
   const [{}, dispatch] = useStateValue();
+
   useEffect(() => {
     // will only run once when the app component loads...
 
@@ -34,12 +36,27 @@ function App() {
 
   return (
     <div className="app">
-      <Header />
-
       <Routes>
-        <Route path="/" element={<Home />} />
-         
-        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/login" element={<Login />} />
+
+        <Route
+          path="/"
+          element={
+            <>
+              <Header />
+              <Home />
+            </>
+          }
+        />
+        <Route
+          path="/checkout"
+          element={
+            <>
+              <Header />
+              <Checkout />
+            </>
+          }
+        />
       </Routes>
     </div>
   );
