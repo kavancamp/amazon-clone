@@ -8,9 +8,8 @@ import {
   faCartShopping,
 } from "@fortawesome/free-solid-svg-icons";
 import { useStateValue } from "./StateProvider";
-
+import { auth } from "./firebase";
 library.add(faMagnifyingGlass, faCartShopping);
-
 
 function Header() {
   const [{ basket, user }, dispatch] = useStateValue();
@@ -20,6 +19,7 @@ function Header() {
       auth.signOut();
     }
   };
+  
   return (
     <div className="header">
       <Link to="/">
