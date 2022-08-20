@@ -46,6 +46,7 @@
 
 .header__optionBasket {
   display: flex;
+  padding-top: 5px;
   align-items: center;
   color: white;
 }
