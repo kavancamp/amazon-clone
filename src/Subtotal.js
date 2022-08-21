@@ -31,7 +31,7 @@ function Subtotal() {
 
       <button
         disabled={basket.length === 0}
-        onClick={(e) => navigate.push("/payment")}
+        onClick={(e) => navigate("/payment")}
       >
         Proceed to Checkout
       </button>
