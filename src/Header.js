@@ -19,7 +19,7 @@ function Header() {
       auth.signOut();
     }
   };
-  
+
   return (
     <div className="header">
       <Link to="/">
@@ -48,14 +48,20 @@ function Header() {
           </div>
         </Link>
 
-        <div className="header__option">
-          <span className="header__optionLineOne">Returns</span>
-          <span className="header__optionLinetwo">& Orders</span>
-        </div>
-        <div className="header__option">
-          <span className="header__optionLineOne">Your</span>
-          <span className="header__optionLinetwo">Prime</span>
-        </div>
+        <Link to="/orders">
+          <div className="header__option">
+            <span className="header__optionLineOne">Returns</span>
+            <span className="header__optionLineTwo">& Orders</span>
+          </div>
+        </Link>
+
+        <Link to="/account">
+          <div className="header__option">
+            <span className="header__optionLineOne">Your</span>
+            <span className="header__optionLinetwo">Prime</span>
+          </div>
+        </Link>
+        
         <Link to="/checkout">
           <div className="header__optionBasket">
             <FontAwesomeIcon icon="fa-solid fa-cart-shopping" />
