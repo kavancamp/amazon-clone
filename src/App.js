@@ -8,6 +8,7 @@ import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
 import Login from "./Login.js";
 import Orders from "./Orders.js";
+import Account from "./Account.js"
 
 function App() {
   const [{}, dispatch] = useStateValue();
@@ -46,6 +47,15 @@ function App() {
             <>
               <Header />
               <Home />
+            </>
+          }
+        />
+        <Route
+          path="/account"
+          element={
+            <>
+              <Header />
+              <Account />
             </>
           }
         />
