@@ -1,0 +1,2103 @@
+[debug] [2022-08-23T00:10:57.933Z] ----------------------------------------------------------------------
+[debug] [2022-08-23T00:10:57.936Z] Command:       /Users/keenahvancampenhout/.nvm/versions/node/v16.6.0/bin/node /Users/keenahvancampenhout/.nvm/versions/node/v16.6.0/bin/firebase emulators:start
+[debug] [2022-08-23T00:10:57.937Z] CLI Version:   11.8.0
+[debug] [2022-08-23T00:10:57.937Z] Platform:      darwin
+[debug] [2022-08-23T00:10:57.937Z] Node Version:  v16.6.0
+[debug] [2022-08-23T00:10:57.939Z] Time:          Mon Aug 22 2022 19:10:57 GMT-0500 (Central Daylight Time)
+[debug] [2022-08-23T00:10:57.939Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-23T00:10:58.031Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-23T00:10:58.032Z] > authorizing via signed-in user (kvancamp@mail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2022-08-23T00:10:58.121Z] [hub] writing locator at /var/folders/b_/fq1lnt791956kh4zxk_4n3ym0000gn/T/hub-clone-946c0.json
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage, eventarc {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage, eventarc\u001b[22m"}}
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-08-23T00:10:58.153Z] defaultcredentials: writing to file /Users/keenahvancampenhout/.config/firebase/kvancamp_mail_com_application_default_credentials.json
+[debug] [2022-08-23T00:10:58.162Z] Setting GAC to /Users/keenahvancampenhout/.config/firebase/kvancamp_mail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/keenahvancampenhout/.config/firebase/kvancamp_mail_com_application_default_credentials.json"}}
+[debug] [2022-08-23T00:10:58.168Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-946c0/adminSdkConfig [none]
+[debug] [2022-08-23T00:10:58.436Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-946c0/adminSdkConfig 200
+[debug] [2022-08-23T00:10:58.436Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-946c0/adminSdkConfig {"projectId":"clone-946c0","storageBucket":"clone-946c0.appspot.com"}
+[debug] [2022-08-23T00:10:58.492Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-946c0/sites 
+[debug] [2022-08-23T00:10:58.955Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-946c0/sites 200
+[debug] [2022-08-23T00:10:58.955Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-946c0/sites {"sites":[{"name":"projects/clone-946c0/sites/clone-946c0","defaultUrl":"https://clone-946c0.web.app","appId":"1:516515981621:web:3e925191106ac3921c047c","type":"DEFAULT_SITE"}]}
+[debug] [2022-08-23T00:10:58.956Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-946c0/webApps/1:516515981621:web:3e925191106ac3921c047c/config [none]
+[debug] [2022-08-23T00:10:59.372Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-946c0/webApps/1:516515981621:web:3e925191106ac3921c047c/config 200
+[debug] [2022-08-23T00:10:59.372Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-946c0/webApps/1:516515981621:web:3e925191106ac3921c047c/config {"projectId":"clone-946c0","appId":"1:516515981621:web:3e925191106ac3921c047c","storageBucket":"clone-946c0.appspot.com","apiKey":"AIzaSyCMVpKWujYGfk3LSzHbiskgppi9LvkPyhc","authDomain":"clone-946c0.firebaseapp.com","messagingSenderId":"516515981621"}
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] ✔  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2022-08-23T00:10:59.521Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-08-23T00:10:59.521Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-08-23T00:10:59.521Z] Starting Emulator UI with command {"binary":"node","args":["/Users/keenahvancampenhout/.cache/firebase/emulators/ui-v1.9.0/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/keenahvancampenhout/.cache/firebase/emulators/ui-v1.9.0/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-08-23T00:10:59.700Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "/Users/keenahvancampenhout/Development/amazon-clone/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/keenahvancampenhout/Development/amazon-clone/functions\" for Cloud Functions..."}}
+[debug] [2022-08-23T00:10:59.811Z] Validating nodejs source
+[debug] [2022-08-23T00:11:01.336Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:11:01.339Z] Building nodejs source
+[debug] [2022-08-23T00:11:01.339Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:11:01.343Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:11:01.657Z] Serving at port 9005
+
+[debug] [2022-08-23T00:11:01.763Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-23T00:11:01.771Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] ✔  functions[us-central1-api]: http function initialized (http://localhost:5001/clone-946c0/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/clone-946c0/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ localhost:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-08-23T00:11:23.803Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-08-23T00:11:23.803Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-08-23T00:11:23.804Z] Accepted request GET /clone-946c0/us-central1/api --> us-central1-api
+[debug] [2022-08-23T00:11:23.839Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-08-23T00:11:23.840Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-08-23T00:11:23.841Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-08-23T00:11:23.841Z] [worker-us-central1-api-b7dcb832-c008-47bf-90c7-0bdfb808ec96]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b7dcb832-c008-47bf-90c7-0bdfb808ec96]: BUSY"}}
+[debug] [2022-08-23T00:11:25.769Z] [runtime-status] [22039] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/keenahvancampenhout/Development/amazon-clone/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [22039] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/keenahvancampenhout/Development/amazon-clone/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-08-23T00:11:25.772Z] [runtime-status] [22039] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"/Users/keenahvancampenhout/Development/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [22039] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"/Users/keenahvancampenhout/Development/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-08-23T00:11:25.773Z] [runtime-status] [22039] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [22039] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-08-23T00:11:25.778Z] [runtime-status] [22039] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"/Users/keenahvancampenhout/Development/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [22039] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"/Users/keenahvancampenhout/Development/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-08-23T00:11:25.882Z] [runtime-status] [22039] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [22039] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-08-23T00:11:25.882Z] [runtime-status] [22039] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.22.0","resolution":"/Users/keenahvancampenhout/Development/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [22039] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"/Users/keenahvancampenhout/Development/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-08-23T00:11:25.884Z] [runtime-status] [22039] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"/Users/keenahvancampenhout/Development/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [22039] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"/Users/keenahvancampenhout/Development/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-08-23T00:11:25.885Z] [runtime-status] [22039] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/keenahvancampenhout/Development/amazon-clone/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [22039] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/keenahvancampenhout/Development/amazon-clone/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-08-23T00:11:25.887Z] [runtime-status] [22039] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"/Users/keenahvancampenhout/Development/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [22039] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"/Users/keenahvancampenhout/Development/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-08-23T00:11:25.887Z] [runtime-status] [22039] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/keenahvancampenhout/Development/amazon-clone/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [22039] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/keenahvancampenhout/Development/amazon-clone/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-08-23T00:11:25.888Z] [runtime-status] [22039] Functions runtime initialized. {"cwd":"/Users/keenahvancampenhout/Development/amazon-clone/functions","node_version":"16.6.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [22039] Functions runtime initialized. {\"cwd\":\"/Users/keenahvancampenhout/Development/amazon-clone/functions\",\"node_version\":\"16.6.0\"}"}}
+[debug] [2022-08-23T00:11:26.237Z] [runtime-status] [22039] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [22039] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-08-23T00:11:26.238Z] [runtime-status] [22039] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [22039] Running api in signature http"}}
+[debug] [2022-08-23T00:11:26.247Z] [runtime-status] [22039] Listening to port: /var/folders/b_/fq1lnt791956kh4zxk_4n3ym0000gn/T/fire_emu_326a1e6346406fdb.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [22039] Listening to port: /var/folders/b_/fq1lnt791956kh4zxk_4n3ym0000gn/T/fire_emu_326a1e6346406fdb.sock"}}
+[debug] [2022-08-23T00:11:26.300Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-08-23T00:11:26.301Z] [functions] Got req.url=/clone-946c0/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-946c0/us-central1/api, mapping to path=/"}}
+[debug] [2022-08-23T00:11:26.304Z] [runtime-status] [22039] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [22039] Ephemeral server handling GET request"}}
+[debug] [2022-08-23T00:11:26.309Z] [runtime-status] [22039] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [22039] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-08-23T00:11:26.311Z] [worker-us-central1-api-b7dcb832-c008-47bf-90c7-0bdfb808ec96]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b7dcb832-c008-47bf-90c7-0bdfb808ec96]: IDLE"}}
+[debug] [2022-08-23T00:11:26.312Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-08-23T00:11:26.388Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2022-08-23T00:13:39.658Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:13:40.661Z] Validating nodejs source
+[debug] [2022-08-23T00:13:45.264Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:13:45.265Z] Building nodejs source
+[debug] [2022-08-23T00:13:45.265Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:13:45.266Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:13:45.267Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:13:45.563Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:13:45.662Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:13:45.779Z] Serving at port 9005
+
+[debug] [2022-08-23T00:13:45.974Z] Got response from /__/functions.yaml Failed to generate manifest from function source: TypeError: Cannot read property 'length' of undefined
+[debug] [2022-08-23T00:13:45.977Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 60:
+     ...  from function source: TypeError: Cannot read property 'length'  ... 
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: TypeError: Cannot read property 'length' of undefined\n\u0000","position":59,"line":0,"column":59},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 60:\n     ...  from function source: TypeError: Cannot read property 'length'  ... \n                                         ^"}
+[debug] [2022-08-23T00:13:45.989Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: TypeError: Cannot read property 'length' of undefined {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: TypeError: Cannot read property 'length' of undefined"}}
+[debug] [2022-08-23T00:13:46.663Z] Validating nodejs source
+[debug] [2022-08-23T00:13:48.940Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:13:48.941Z] Building nodejs source
+[debug] [2022-08-23T00:13:48.941Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:13:48.942Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:13:48.943Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:13:49.345Z] Serving at port 9005
+
+[debug] [2022-08-23T00:13:49.848Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-23T00:13:49.861Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-08-23T00:13:49.907Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2022-08-23T00:13:49.907Z] [worker-us-central1-api-b7dcb832-c008-47bf-90c7-0bdfb808ec96]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b7dcb832-c008-47bf-90c7-0bdfb808ec96]: FINISHING"}}
+[debug] [2022-08-23T00:13:49.922Z] [worker-us-central1-api-b7dcb832-c008-47bf-90c7-0bdfb808ec96]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b7dcb832-c008-47bf-90c7-0bdfb808ec96]: exited"}}
+[debug] [2022-08-23T00:13:49.922Z] [worker-us-central1-api-b7dcb832-c008-47bf-90c7-0bdfb808ec96]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b7dcb832-c008-47bf-90c7-0bdfb808ec96]: FINISHED"}}
+[debug] [2022-08-23T00:13:49.947Z] Validating nodejs source
+[debug] [2022-08-23T00:13:51.898Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:13:51.900Z] Building nodejs source
+[debug] [2022-08-23T00:13:51.900Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:13:51.901Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:13:51.901Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:13:52.249Z] Serving at port 9005
+
+[debug] [2022-08-23T00:13:52.422Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-23T00:13:52.432Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-08-23T00:13:52.903Z] Validating nodejs source
+[debug] [2022-08-23T00:13:55.257Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:13:55.258Z] Building nodejs source
+[debug] [2022-08-23T00:13:55.258Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:13:55.260Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:13:55.551Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:13:56.108Z] Serving at port 9005
+
+[debug] [2022-08-23T00:13:56.259Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-23T00:13:56.268Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-08-23T00:13:56.555Z] Validating nodejs source
+[debug] [2022-08-23T00:13:58.440Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:13:58.441Z] Building nodejs source
+[debug] [2022-08-23T00:13:58.441Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:13:58.443Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:13:58.836Z] Serving at port 9005
+
+[debug] [2022-08-23T00:13:58.958Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-23T00:13:58.966Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-08-23T00:14:04.346Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:14:05.349Z] Validating nodejs source
+[debug] [2022-08-23T00:14:07.887Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:14:07.888Z] Building nodejs source
+[debug] [2022-08-23T00:14:07.888Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:14:07.889Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:14:07.890Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:14:08.293Z] Serving at port 9005
+
+[debug] [2022-08-23T00:14:08.415Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-23T00:14:08.421Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-08-23T00:14:08.893Z] Validating nodejs source
+[debug] [2022-08-23T00:14:10.587Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:14:10.588Z] Building nodejs source
+[debug] [2022-08-23T00:14:10.588Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:14:10.589Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:14:10.907Z] Serving at port 9005
+
+[debug] [2022-08-23T00:14:11.087Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-23T00:14:11.166Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-08-23T00:14:23.888Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:14:24.891Z] Validating nodejs source
+[debug] [2022-08-23T00:14:26.556Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:14:26.557Z] Building nodejs source
+[debug] [2022-08-23T00:14:26.557Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:14:26.561Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:14:26.981Z] Serving at port 9005
+
+[debug] [2022-08-23T00:14:27.110Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Unexpected token ')'
+[debug] [2022-08-23T00:14:27.110Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Unexpected token ')'
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Unexpected token ')'\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Unexpected token ')'\n                                         ^"}
+[debug] [2022-08-23T00:14:27.117Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token ')' {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token ')'"}}
+[debug] [2022-08-23T00:14:37.479Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:14:38.482Z] Validating nodejs source
+[debug] [2022-08-23T00:14:40.513Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:14:40.515Z] Building nodejs source
+[debug] [2022-08-23T00:14:40.515Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:14:40.516Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:14:40.516Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:14:40.976Z] Serving at port 9005
+
+[debug] [2022-08-23T00:14:40.997Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Unexpected token ')'
+[debug] [2022-08-23T00:14:40.997Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Unexpected token ')'
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Unexpected token ')'\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Unexpected token ')'\n                                         ^"}
+[debug] [2022-08-23T00:14:41.001Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token ')' {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token ')'"}}
+[debug] [2022-08-23T00:14:41.520Z] Validating nodejs source
+[debug] [2022-08-23T00:14:43.732Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:14:43.734Z] Building nodejs source
+[debug] [2022-08-23T00:14:43.734Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:14:43.735Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:14:44.251Z] Serving at port 9005
+
+[debug] [2022-08-23T00:14:44.275Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Unexpected token ')'
+[debug] [2022-08-23T00:14:44.275Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Unexpected token ')'
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Unexpected token ')'\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Unexpected token ')'\n                                         ^"}
+[debug] [2022-08-23T00:14:44.279Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token ')' {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token ')'"}}
+[debug] [2022-08-23T00:14:46.996Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:14:47.096Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:14:48.110Z] Validating nodejs source
+[debug] [2022-08-23T00:14:49.965Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:14:49.966Z] Building nodejs source
+[debug] [2022-08-23T00:14:49.966Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:14:49.973Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:14:50.381Z] Serving at port 9005
+
+[debug] [2022-08-23T00:14:50.413Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Unexpected token ')'
+[debug] [2022-08-23T00:14:50.414Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Unexpected token ')'
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Unexpected token ')'\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Unexpected token ')'\n                                         ^"}
+[debug] [2022-08-23T00:14:50.422Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token ')' {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token ')'"}}
+[debug] [2022-08-23T00:14:52.479Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:14:52.578Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:14:53.582Z] Validating nodejs source
+[debug] [2022-08-23T00:14:55.649Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:14:55.650Z] Building nodejs source
+[debug] [2022-08-23T00:14:55.650Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:14:55.651Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:14:56.013Z] Serving at port 9005
+
+[debug] [2022-08-23T00:14:56.206Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:14:56.362Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-23T00:14:56.370Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-08-23T00:14:57.209Z] Validating nodejs source
+[debug] [2022-08-23T00:14:59.837Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:14:59.839Z] Building nodejs source
+[debug] [2022-08-23T00:14:59.839Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:14:59.840Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:14:59.841Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:15:00.388Z] Serving at port 9005
+
+[debug] [2022-08-23T00:15:00.515Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-23T00:15:00.522Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-08-23T00:15:00.845Z] Validating nodejs source
+[debug] [2022-08-23T00:15:02.492Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:15:02.493Z] Building nodejs source
+[debug] [2022-08-23T00:15:02.493Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:15:02.495Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:15:02.875Z] Serving at port 9005
+
+[debug] [2022-08-23T00:15:03.037Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-23T00:15:03.045Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-08-23T00:15:10.352Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:15:11.354Z] Validating nodejs source
+[debug] [2022-08-23T00:15:13.265Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:15:13.267Z] Building nodejs source
+[debug] [2022-08-23T00:15:13.267Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:15:13.273Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:15:13.382Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:15:13.478Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:15:13.736Z] Serving at port 9005
+
+[debug] [2022-08-23T00:15:13.973Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-23T00:15:13.979Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-08-23T00:15:14.483Z] Validating nodejs source
+[debug] [2022-08-23T00:15:16.200Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:15:16.201Z] Building nodejs source
+[debug] [2022-08-23T00:15:16.201Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:15:16.202Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:15:16.581Z] Serving at port 9005
+
+[debug] [2022-08-23T00:15:16.714Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-23T00:15:16.724Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-08-23T00:16:04.817Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:16:05.831Z] Validating nodejs source
+[debug] [2022-08-23T00:16:09.126Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:16:09.127Z] Building nodejs source
+[debug] [2022-08-23T00:16:09.127Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:16:09.128Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:16:09.129Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:16:09.570Z] Serving at port 9005
+
+[debug] [2022-08-23T00:16:09.822Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-23T00:16:09.831Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-08-23T00:16:10.131Z] Validating nodejs source
+[debug] [2022-08-23T00:16:12.574Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:16:12.575Z] Building nodejs source
+[debug] [2022-08-23T00:16:12.575Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:16:12.579Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:16:12.580Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:16:13.039Z] Serving at port 9005
+
+[debug] [2022-08-23T00:16:13.192Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-23T00:16:13.200Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-08-23T00:16:13.582Z] Validating nodejs source
+[debug] [2022-08-23T00:16:15.235Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:16:15.236Z] Building nodejs source
+[debug] [2022-08-23T00:16:15.236Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:16:15.237Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:16:15.607Z] Serving at port 9005
+
+[debug] [2022-08-23T00:16:15.734Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-23T00:16:15.742Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-08-23T00:16:36.956Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:16:37.958Z] Validating nodejs source
+[debug] [2022-08-23T00:16:42.517Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:16:42.518Z] Building nodejs source
+[debug] [2022-08-23T00:16:42.518Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:16:42.523Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:16:43.139Z] Serving at port 9005
+
+[debug] [2022-08-23T00:16:43.365Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:16:43.459Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:16:43.469Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-23T00:16:43.480Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-08-23T00:16:44.462Z] Validating nodejs source
+[debug] [2022-08-23T00:16:48.998Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:16:49.000Z] Building nodejs source
+[debug] [2022-08-23T00:16:49.000Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:16:49.002Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:16:50.098Z] Serving at port 9005
+
+[debug] [2022-08-23T00:16:50.367Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-23T00:16:50.377Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-08-23T00:16:50.626Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:16:50.721Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:16:51.722Z] Validating nodejs source
+[debug] [2022-08-23T00:16:53.900Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:16:53.901Z] Building nodejs source
+[debug] [2022-08-23T00:16:53.901Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:16:53.907Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:16:54.819Z] Serving at port 9005
+
+[debug] [2022-08-23T00:16:55.135Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-23T00:16:55.159Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-08-23T00:16:59.495Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:17:00.496Z] Validating nodejs source
+[debug] [2022-08-23T00:17:02.653Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:17:02.654Z] Building nodejs source
+[debug] [2022-08-23T00:17:02.654Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:17:02.656Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:17:02.656Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:17:03.392Z] Serving at port 9005
+
+[debug] [2022-08-23T00:17:03.692Z] Validating nodejs source
+[debug] [2022-08-23T00:17:07.989Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:17:07.990Z] Building nodejs source
+[debug] [2022-08-23T00:17:07.990Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:17:07.991Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:17:07.993Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-23T00:17:07.994Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:17:08.009Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-08-23T00:17:08.514Z] Serving at port 9006
+
+[debug] [2022-08-23T00:17:08.539Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: missing ) after argument list
+[debug] [2022-08-23T00:17:08.540Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: missing ) after argument list
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: missing ) after argument list\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: missing ) after argument list\n                                         ^"}
+[debug] [2022-08-23T00:17:08.544Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list"}}
+[debug] [2022-08-23T00:17:08.994Z] Validating nodejs source
+[debug] [2022-08-23T00:17:12.001Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:17:12.002Z] Building nodejs source
+[debug] [2022-08-23T00:17:12.002Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:17:12.003Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:17:12.531Z] Serving at port 9005
+
+[debug] [2022-08-23T00:17:12.556Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: missing ) after argument list
+[debug] [2022-08-23T00:17:12.557Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: missing ) after argument list
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: missing ) after argument list\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: missing ) after argument list\n                                         ^"}
+[debug] [2022-08-23T00:17:12.563Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list"}}
+[debug] [2022-08-23T00:17:15.121Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:17:16.124Z] Validating nodejs source
+[debug] [2022-08-23T00:17:17.779Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:17:17.780Z] Building nodejs source
+[debug] [2022-08-23T00:17:17.780Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:17:17.781Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:17:18.242Z] Serving at port 9005
+
+[debug] [2022-08-23T00:17:18.270Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: missing ) after argument list
+[debug] [2022-08-23T00:17:18.270Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: missing ) after argument list
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: missing ) after argument list\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: missing ) after argument list\n                                         ^"}
+[debug] [2022-08-23T00:17:18.275Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list"}}
+[debug] [2022-08-23T00:17:22.473Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:17:23.475Z] Validating nodejs source
+[debug] [2022-08-23T00:17:26.254Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:17:26.255Z] Building nodejs source
+[debug] [2022-08-23T00:17:26.255Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:17:26.256Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:17:26.258Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:17:27.273Z] Validating nodejs source
+[debug] [2022-08-23T00:17:29.936Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:17:29.937Z] Building nodejs source
+[debug] [2022-08-23T00:17:29.937Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:17:29.938Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:17:29.938Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:17:29.958Z] Serving at port 9005
+
+[debug] [2022-08-23T00:17:29.984Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: missing ) after argument list
+[debug] [2022-08-23T00:17:29.985Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: missing ) after argument list
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: missing ) after argument list\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: missing ) after argument list\n                                         ^"}
+[debug] [2022-08-23T00:17:29.994Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list"}}
+[debug] [2022-08-23T00:17:30.419Z] Serving at port 9006
+
+[debug] [2022-08-23T00:17:30.438Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: missing ) after argument list
+[debug] [2022-08-23T00:17:30.438Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: missing ) after argument list
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: missing ) after argument list\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: missing ) after argument list\n                                         ^"}
+[debug] [2022-08-23T00:17:30.442Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list"}}
+[debug] [2022-08-23T00:17:30.940Z] Validating nodejs source
+[debug] [2022-08-23T00:17:32.628Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:17:32.629Z] Building nodejs source
+[debug] [2022-08-23T00:17:32.629Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:17:32.641Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:17:33.018Z] Serving at port 9005
+
+[debug] [2022-08-23T00:17:33.047Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: missing ) after argument list
+[debug] [2022-08-23T00:17:33.047Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: missing ) after argument list
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: missing ) after argument list\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: missing ) after argument list\n                                         ^"}
+[debug] [2022-08-23T00:17:33.051Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list"}}
+[debug] [2022-08-23T00:17:39.010Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:17:40.014Z] Validating nodejs source
+[debug] [2022-08-23T00:17:43.510Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:17:43.511Z] Building nodejs source
+[debug] [2022-08-23T00:17:43.511Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:17:43.512Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:17:43.522Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:17:44.145Z] Serving at port 9005
+
+[debug] [2022-08-23T00:17:44.279Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: missing ) after argument list
+[debug] [2022-08-23T00:17:44.282Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: missing ) after argument list
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: missing ) after argument list\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: missing ) after argument list\n                                         ^"}
+[debug] [2022-08-23T00:17:44.299Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list"}}
+[debug] [2022-08-23T00:17:44.513Z] Validating nodejs source
+[debug] [2022-08-23T00:17:48.098Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:17:48.099Z] Building nodejs source
+[debug] [2022-08-23T00:17:48.099Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:17:48.100Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:17:48.106Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:17:49.103Z] Validating nodejs source
+[debug] [2022-08-23T00:17:53.483Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:17:53.484Z] Building nodejs source
+[debug] [2022-08-23T00:17:53.484Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:17:53.485Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:17:53.488Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:17:53.504Z] Serving at port 9005
+
+[debug] [2022-08-23T00:17:53.541Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: missing ) after argument list
+[debug] [2022-08-23T00:17:53.541Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: missing ) after argument list
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: missing ) after argument list\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: missing ) after argument list\n                                         ^"}
+[debug] [2022-08-23T00:17:53.549Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list"}}
+[debug] [2022-08-23T00:17:53.959Z] Serving at port 9006
+
+[debug] [2022-08-23T00:17:53.992Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: missing ) after argument list
+[debug] [2022-08-23T00:17:53.992Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: missing ) after argument list
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: missing ) after argument list\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: missing ) after argument list\n                                         ^"}
+[debug] [2022-08-23T00:17:53.999Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list"}}
+[debug] [2022-08-23T00:17:54.488Z] Validating nodejs source
+[debug] [2022-08-23T00:17:56.234Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:17:56.235Z] Building nodejs source
+[debug] [2022-08-23T00:17:56.235Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:17:56.236Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:17:56.708Z] Serving at port 9005
+
+[debug] [2022-08-23T00:17:56.732Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: missing ) after argument list
+[debug] [2022-08-23T00:17:56.732Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: missing ) after argument list
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: missing ) after argument list\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: missing ) after argument list\n                                         ^"}
+[debug] [2022-08-23T00:17:56.742Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list"}}
+[debug] [2022-08-23T00:18:06.202Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:18:06.301Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:18:07.303Z] Validating nodejs source
+[debug] [2022-08-23T00:18:11.719Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:18:11.720Z] Building nodejs source
+[debug] [2022-08-23T00:18:11.720Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:18:11.721Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:18:12.006Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:18:12.560Z] Serving at port 9005
+
+[debug] [2022-08-23T00:18:12.650Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: missing ) after argument list
+[debug] [2022-08-23T00:18:12.651Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: missing ) after argument list
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: missing ) after argument list\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: missing ) after argument list\n                                         ^"}
+[debug] [2022-08-23T00:18:12.668Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list"}}
+[debug] [2022-08-23T00:18:13.008Z] Validating nodejs source
+[debug] [2022-08-23T00:18:15.910Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:18:15.913Z] Building nodejs source
+[debug] [2022-08-23T00:18:15.913Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:18:15.914Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:18:15.915Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:18:16.639Z] Serving at port 9005
+
+[debug] [2022-08-23T00:18:16.660Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: missing ) after argument list
+[debug] [2022-08-23T00:18:16.661Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: missing ) after argument list
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: missing ) after argument list\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: missing ) after argument list\n                                         ^"}
+[debug] [2022-08-23T00:18:16.671Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list"}}
+[debug] [2022-08-23T00:18:16.915Z] Validating nodejs source
+[debug] [2022-08-23T00:18:20.355Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:18:20.356Z] Building nodejs source
+[debug] [2022-08-23T00:18:20.356Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:18:20.358Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:18:20.359Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:18:21.004Z] Serving at port 9005
+
+[debug] [2022-08-23T00:18:21.027Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: missing ) after argument list
+[debug] [2022-08-23T00:18:21.028Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: missing ) after argument list
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: missing ) after argument list\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: missing ) after argument list\n                                         ^"}
+[debug] [2022-08-23T00:18:21.032Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list"}}
+[debug] [2022-08-23T00:18:21.359Z] Validating nodejs source
+[debug] [2022-08-23T00:18:23.639Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:18:23.640Z] Building nodejs source
+[debug] [2022-08-23T00:18:23.640Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:18:23.641Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:18:23.642Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:18:23.934Z] Serving at port 9005
+
+[debug] [2022-08-23T00:18:23.961Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: missing ) after argument list
+[debug] [2022-08-23T00:18:23.962Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: missing ) after argument list
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: missing ) after argument list\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: missing ) after argument list\n                                         ^"}
+[debug] [2022-08-23T00:18:23.970Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list"}}
+[debug] [2022-08-23T00:18:24.643Z] Validating nodejs source
+[debug] [2022-08-23T00:18:28.939Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:18:28.940Z] Building nodejs source
+[debug] [2022-08-23T00:18:28.940Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:18:28.943Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:18:29.577Z] Serving at port 9005
+
+[debug] [2022-08-23T00:18:29.606Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: missing ) after argument list
+[debug] [2022-08-23T00:18:29.607Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: missing ) after argument list
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: missing ) after argument list\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: missing ) after argument list\n                                         ^"}
+[debug] [2022-08-23T00:18:29.611Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list"}}
+[debug] [2022-08-23T00:18:30.255Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:18:31.257Z] Validating nodejs source
+[debug] [2022-08-23T00:18:33.514Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:18:33.516Z] Building nodejs source
+[debug] [2022-08-23T00:18:33.516Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:18:33.517Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:18:33.998Z] Serving at port 9005
+
+[debug] [2022-08-23T00:18:34.030Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: missing ) after argument list
+[debug] [2022-08-23T00:18:34.031Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: missing ) after argument list
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: missing ) after argument list\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: missing ) after argument list\n                                         ^"}
+[debug] [2022-08-23T00:18:34.037Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list"}}
+[debug] [2022-08-23T00:18:36.446Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:18:37.451Z] Validating nodejs source
+[debug] [2022-08-23T00:18:39.974Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:18:39.976Z] Building nodejs source
+[debug] [2022-08-23T00:18:39.976Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:18:39.978Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:18:39.979Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:18:40.834Z] Serving at port 9005
+
+[debug] [2022-08-23T00:18:40.866Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: missing ) after argument list
+[debug] [2022-08-23T00:18:40.868Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: missing ) after argument list
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: missing ) after argument list\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: missing ) after argument list\n                                         ^"}
+[debug] [2022-08-23T00:18:40.876Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-08-23T00:18:41.054Z] Validating nodejs source
+[debug] [2022-08-23T00:18:43.278Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:18:43.279Z] Building nodejs source
+[debug] [2022-08-23T00:18:43.279Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:18:43.285Z] Could not find functions.yaml. Must use http discovery
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list"}}
+[debug] [2022-08-23T00:18:43.638Z] Serving at port 9005
+
+[debug] [2022-08-23T00:18:43.760Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: missing ) after argument list
+[debug] [2022-08-23T00:18:43.761Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: missing ) after argument list
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: missing ) after argument list\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: missing ) after argument list\n                                         ^"}
+[debug] [2022-08-23T00:18:43.765Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list"}}
+[debug] [2022-08-23T00:19:04.298Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:19:05.302Z] Validating nodejs source
+[debug] [2022-08-23T00:19:06.840Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:19:06.841Z] Building nodejs source
+[debug] [2022-08-23T00:19:06.841Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:19:06.842Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:19:06.943Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:19:07.216Z] Serving at port 9005
+
+[debug] [2022-08-23T00:19:07.239Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: missing ) after argument list
+[debug] [2022-08-23T00:19:07.239Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: missing ) after argument list
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: missing ) after argument list\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: missing ) after argument list\n                                         ^"}
+[debug] [2022-08-23T00:19:07.242Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list"}}
+[debug] [2022-08-23T00:19:07.946Z] Validating nodejs source
+[debug] [2022-08-23T00:19:09.606Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:19:09.607Z] Building nodejs source
+[debug] [2022-08-23T00:19:09.607Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:19:09.609Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:19:09.992Z] Serving at port 9005
+
+[debug] [2022-08-23T00:19:10.008Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: missing ) after argument list
+[debug] [2022-08-23T00:19:10.008Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: missing ) after argument list
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: missing ) after argument list\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: missing ) after argument list\n                                         ^"}
+[debug] [2022-08-23T00:19:10.011Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list"}}
+[debug] [2022-08-23T00:19:13.204Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:19:14.206Z] Validating nodejs source
+[debug] [2022-08-23T00:19:15.719Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:19:15.721Z] Building nodejs source
+[debug] [2022-08-23T00:19:15.721Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:19:15.722Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:19:16.086Z] Serving at port 9005
+
+[debug] [2022-08-23T00:19:16.104Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: missing ) after argument list
+[debug] [2022-08-23T00:19:16.104Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: missing ) after argument list
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: missing ) after argument list\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: missing ) after argument list\n                                         ^"}
+[debug] [2022-08-23T00:19:16.109Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list"}}
+[debug] [2022-08-23T00:19:17.215Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:19:17.316Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:19:18.318Z] Validating nodejs source
+[debug] [2022-08-23T00:19:20.517Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:19:20.518Z] Building nodejs source
+[debug] [2022-08-23T00:19:20.518Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:19:20.519Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:19:20.598Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:19:20.684Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:19:21.359Z] Serving at port 9005
+
+[debug] [2022-08-23T00:19:21.393Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: missing ) after argument list
+[debug] [2022-08-23T00:19:21.394Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: missing ) after argument list
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: missing ) after argument list\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: missing ) after argument list\n                                         ^"}
+[debug] [2022-08-23T00:19:21.459Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list"}}
+[debug] [2022-08-23T00:19:21.765Z] Validating nodejs source
+[debug] [2022-08-23T00:19:24.854Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:19:24.855Z] Building nodejs source
+[debug] [2022-08-23T00:19:24.855Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:19:24.857Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:19:25.283Z] Serving at port 9005
+
+[debug] [2022-08-23T00:19:25.312Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: missing ) after argument list
+[debug] [2022-08-23T00:19:25.313Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: missing ) after argument list
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: missing ) after argument list\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: missing ) after argument list\n                                         ^"}
+[debug] [2022-08-23T00:19:25.316Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list"}}
+[debug] [2022-08-23T00:19:37.733Z] File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/keenahvancampenhout/Development/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2022-08-23T00:19:38.737Z] Validating nodejs source
+[debug] [2022-08-23T00:19:41.849Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T00:19:41.850Z] Building nodejs source
+[debug] [2022-08-23T00:19:41.850Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T00:19:41.853Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T00:19:42.387Z] Serving at port 9005
+
+[debug] [2022-08-23T00:19:42.412Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: missing ) after argument list
+[debug] [2022-08-23T00:19:42.413Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: missing ) after argument list
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: missing ) after argument list\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: missing ) after argument list\n                                         ^"}
+[debug] [2022-08-23T00:19:42.416Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list"}}
