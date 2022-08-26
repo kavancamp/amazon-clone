@@ -1,8 +1,9 @@
-import moment from "react-moment";
 import React from "react";
 import CurrencyFormat from "react-currency-format";
 import CheckoutProduct from "./CheckoutProduct";
 import "./Order.css";
+import moment from 'moment';
+import 'moment-timezone';
 
 function Order({ order }) {
   return (
