@@ -1,7 +1,9 @@
 import React from "react";
 import { useStateValue } from "./StateProvider";
 import "./CheckoutProduct.css";
-function CheckoutProduct({ id, image, title, price, rating }) {
+
+function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
+  // eslint-disable-next-line no-unused-vars
   const [{ basket }, dispatch] = useStateValue();
 
   const removeFromBasket = () => {
@@ -13,7 +15,7 @@ function CheckoutProduct({ id, image, title, price, rating }) {
   };
   return (
     <div className="checkoutProduct">
-      <img src={image} alt="" className="checkoutProduct__image" />
+      <img className="checkoutProduct__image" src={image} alt="checkout img" />
 
       <div className="checkoutProduct__info">
         <p className="checkoutProduct__title">{title}</p>
@@ -27,10 +29,10 @@ function CheckoutProduct({ id, image, title, price, rating }) {
             .map((_, i) => (
               <p>🌟</p>
             ))}
-          <div className="remove">
-            <button onClick={removeFromBasket}>Remove from Basket</button>
-          </div>
         </div>
+        {!hideButton && (
+          <button onClick={removeFromBasket}>Remove from Basket</button>
+        )}
       </div>
     </div>
   );
