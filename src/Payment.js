@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import "./Payment.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
@@ -47,7 +47,7 @@ function Payment() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     setProcessing(true);
-
+    // eslint-disable-next-line no-unused-vars
     const payload = await stripe
       .confirmCardPayment(clientSecret, {
         payment_method: {
@@ -56,7 +56,6 @@ function Payment() {
       })
       .then(({ paymentIntent }) => {
         /* Show a success message upon completion */
-        /* https://dashboard.stripe.com/test/payments */
         console.log(paymentIntent);
 
         db.collection("users")
@@ -77,7 +76,7 @@ function Payment() {
           type: "EMPTY_BASKET",
         });
 
-        navigate.replace("/orders");
+        navigate("/orders");
       });
   };
 
@@ -127,7 +126,9 @@ function Payment() {
               <div className="payment__priceContainer">
                 <CurrencyFormat
                   renderText={(value) => (
+                    <>
                       <h3>Order Total: {value}</h3>
+                    </>
                   )}
                   decimalScale={2}
                   value={getBasketTotal(basket)} // Part of the homework
@@ -140,6 +141,7 @@ function Payment() {
                 </button>
               </div>
 
+              {/* Errors */}
               {error && <div>{error}</div>}
             </form>
           </div>
