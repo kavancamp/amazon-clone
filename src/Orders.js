@@ -4,18 +4,20 @@ import "./Orders.css";
 import { useStateValue } from "./StateProvider";
 import Order from "./Order";
 
-function Orders() {
+function Orders() {  
+  // eslint-disable-next-line no-unused-vars
   const [{ basket, user }, dispatch] = useStateValue();
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
     if (user) {
+   //for each doc return object desc by creation
       db.collection("users")
         .doc(user?.uid)
         .collection("orders")
         .orderBy("created", "desc")
         .onSnapshot((snapshot) =>
-          setOrders(
+          setOrders( 
             snapshot.docs.map((doc) => ({ id: doc.id, data: doc.data() }))
           )
         );
