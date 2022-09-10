@@ -28,6 +28,7 @@ function Login() {
       .catch((error) => alert(error.message));
   };
   return (
+    
     <div className="login">
       <Link to="/">
         <img
@@ -55,6 +56,10 @@ function Login() {
             onChange={(e) => setPassword(e.target.value)}
           />
           <button
+          class="g-recaptcha" 
+          data-sitekey="reCAPTCHA_site_key" 
+          data-callback='onSubmit' 
+          data-action='submit'
             onClick={signIn}
             type="submit"
             className="login__signInButton"
